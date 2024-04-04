@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color-box {
+            width: 70px;
+            height: 50px;
+            border: 1px solid #000;
+            align-items: center;
+            padding: 5%;
+            color:white;
+            font-weight: bold;
+        }
+
+        button {
+            margin-right: 10px;
+            margin-bottom: 5px;
+        }
+        .cl {
+            display: flex;
+            gap: 5%;
+        }
+        .box{
+            height: 60px;
+        }
+        .appu {
+            display: grid;
+            grid-template-columns: repeat(5, 80px);
+        }
+    </style>
+</head>
+<body>
+    <div class="cl">
+        <div class="color-box" id="colorBox">Color Box</div>
+        <div class="appu">
+            <button class="box" onclick="changeColor('red') ">Red</button>
+            <button class="box" onclick="changeColor('green')">Green</button>
+            <button class="box" onclick="changeColor('blue')">Blue</button>
+            <button class="box" onclick="changeColor('yellow')">Yellow</button>
+            <button class="box" onclick="changeColor('purple')">Purple</button>
+            <button class="box" onclick="changeColor('purple')">Purple</button>
+            <button class="box" onclick="changeColor('orange')">Orange</button>
+            <button class="box" onclick="changeColor('pink')">Pink</button>
+            <button class="box" onclick="changeColor('cyan')">Cyan</button>
+        </div>
+    </div>
+
+    <script>
+        function changeColor(color) {
+            var colorBox = document.getElementById("colorBox");
+            colorBox.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
+
